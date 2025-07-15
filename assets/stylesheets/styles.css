@@ -160,7 +160,7 @@ section {
 }
 
 
-.scroll-top:hover i{
+.scroll-top:hover i {
   color: #ffffff;
 }
 
@@ -315,7 +315,7 @@ section {
 }
 
 @media (max-width: 767px) {
-  
+
   .header .logo h1 {
     font-size: 18px;
   }
@@ -623,18 +623,22 @@ section {
 }
 
 .desktop {
-  display: block; /* inline, inline-block */
+  display: block;
+  /* inline, inline-block */
 }
+
 .mobile {
   display: none;
 }
 
 @media(max-width: 480px) {
-  .desktop{
-      display: none;
+  .desktop {
+    display: none;
   }
+
   .mobile {
-      display: block; /* ou inline, inline-block */
+    display: block;
+    /* ou inline, inline-block */
   }
 }
 
@@ -983,6 +987,7 @@ section {
   font-weight: 700;
   color: var(--color-primary);
 }
+
 .hist .content ul {
   list-style: none;
   padding: 0;
@@ -1038,6 +1043,16 @@ section {
 }
 
 /*--------------------------------------------------------------
+# SEÇÃO INSTAGRAM
+--------------------------------------------------------------*/
+
+.elfsight-app [style*="z-index"] {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+
+/*--------------------------------------------------------------
 # SEÇÃO DEPOIMENTOS
 --------------------------------------------------------------*/
 
@@ -1074,7 +1089,8 @@ section {
   height: 200px;
   overflow: hidden;
 }
-.testimonials .testimonial-item .info-box{
+
+.testimonials .testimonial-item .info-box {
   min-width: 276px;
 }
 
@@ -1181,7 +1197,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .testimonial-text {
     margin-top: 10px;
   }
@@ -1246,7 +1262,7 @@ section {
   margin: 0 0 20px 0;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
 
   .atendimento .title {
     font-size: 18px;
@@ -1353,7 +1369,7 @@ section {
   margin: 0 0 20px 0;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
 
   .cta .title {
     font-size: 18px;
@@ -1390,6 +1406,143 @@ section {
   font-size: 14px;
   color: #3c3c3c;
   margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# BLOG
+--------------------------------------------------------------*/
+
+.blog {
+
+  background-color: var(--color-secondary);
+
+}
+
+.post {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  border: 1px solid #e3f2ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
+
+}
+
+.post:hover {
+
+  background: linear-gradient(to bottom right, #e9f7f5, #d8eee9);
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+
+.post h4 {
+
+  color: #000;
+
+}
+
+.post.open-post {
+  cursor: pointer;
+}
+
+
+.blog-modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.blog-modal.active {
+  display: block;
+}
+
+.blog-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideUp 0.3s ease-in-out;
+  color: var(--color-default);
+  font-family: var(--font-default);
+  background-image: linear-gradient(to bottom right, #f7fbfa, #e4f1ef);
+}
+
+.blog-modal-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.blog-modal-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.blog-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog-modal-close:hover {
+  color: var(--color-default);
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-modal-content {
+    padding: 25px 20px;
+  }
 }
 
 
@@ -1518,7 +1671,7 @@ section {
   text-align: left;
   font-size: 12px;
   font-weight: lighter;
-  color: #000;  
+  color: #000;
 }
 
 @media (max-width: 1365px) {
@@ -1528,7 +1681,7 @@ section {
     font-size: 11px;
 
   }
-  
+
   .footer .footer-info #nome {
 
     font-size: 13px;
@@ -1536,7 +1689,7 @@ section {
 
   }
 
-  .footer .credits{
+  .footer .credits {
 
     font-size: 10px;
     margin-top: 10px;
