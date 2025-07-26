@@ -1051,6 +1051,84 @@ section {
   pointer-events: none !important;
 }
 
+/*--------------------------------------------------------------
+# SEÇÃO FOTOS
+--------------------------------------------------------------*/
+
+.fotos {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.fotos .swiper {
+  padding: 10px 0;
+}
+
+.fotos .swiper-slide {
+  text-align: center;
+}
+
+.fotos .swiper-slide img {
+  width: 100%;
+  max-width: 360px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.fotos .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.fotos .swiper-slide img.top {
+  object-position: top;
+}
+
+.fotos .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.fotos .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-secondary);
+  opacity: 1;
+  margin: 0 5px;
+}
+
+.fotos .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+
+/*--------------------------------------------------------------
+SEÇÃO GALERIA
+--------------------------------------------------------------*/
+
+.shorts-wrapper {
+  position: relative;
+  padding-top: 177.77%;
+  /* Proporção 9:16 (vertical) */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.shorts-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 /*--------------------------------------------------------------
 # SEÇÃO DEPOIMENTOS
