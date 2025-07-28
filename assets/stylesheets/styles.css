@@ -465,11 +465,7 @@ section {
     left: 100%;
     visibility: visible;
   }
-
-  .mobile-nav-show,
-  .mobile-nav-hide {
-    display: none;
-    
+  
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
