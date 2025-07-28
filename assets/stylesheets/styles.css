@@ -1106,6 +1106,16 @@ section {
   background-color: var(--color-primary);
 }
 
+.fotos #disc {
+
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+
+}
+
 
 /*--------------------------------------------------------------
 SEÇÃO GALERIA
