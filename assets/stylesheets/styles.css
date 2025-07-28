@@ -231,7 +231,7 @@ section {
 .topbar {
   background: #2b4039;
   height: 40px;
-  font-size: 14px;
+  font-size: 12px;
   transition: all 0.5s;
   color: #fff;
   padding: 0;
@@ -303,10 +303,11 @@ section {
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  margin-left: -60px;
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 27px;
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.8px;
