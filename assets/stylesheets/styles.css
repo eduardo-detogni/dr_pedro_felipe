@@ -1070,7 +1070,7 @@ section {
 
 .fotos .swiper-slide img {
   width: 100%;
-  max-width: 360px;
+  max-width: 720px;
   height: 400px;
   object-fit: cover;
   object-position: center;
