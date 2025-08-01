@@ -303,7 +303,6 @@ section {
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
-  margin-left: -60px;
 }
 
 .header .logo h1 {
@@ -1536,6 +1535,19 @@ SEÇÃO GALERIA
 .post h4 {
 
   color: #000;
+
+}
+
+.post p {
+
+  text-align: justify;
+
+}
+
+.post .post-date {
+
+  color: var(--color-default);
+  font-weight: bold;
 
 }
 
